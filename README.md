@@ -18,10 +18,23 @@
 ---
 #### Ссылки
 
-YDB-SQLAlchemy
+Yandex Cloud Function
+
+https://yandex.cloud/ru/docs/functions
+
+Репозиторий YDB-SQLAlchemy
 
 https://github.com/ydb-platform/ydb-sqlalchemy
 
-Способы аутентификации
+Способы аутентификации в YDB
 
 https://ydb.tech/docs/ru/recipes/ydb-sdk/auth
+
+
+Подключение к YDB с помощью DBeaver
+
+https://ydb.tech/docs/ru/integrations/gui/dbeaver
+
+Работа с YDB с помощью Jupyter Notebook
+
+https://ydb.tech/docs/ru/integrations/gui/jupyter
