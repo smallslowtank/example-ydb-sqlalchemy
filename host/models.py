@@ -5,10 +5,10 @@ class Base(DeclarativeBase):
     __abstract__ = True
 
 
-class Users(Base):
+class Item(Base):
     '''
-    Таблица пользователей
+    Таблица предметов
     '''
-    __tablename__ = "Users"
+    __tablename__ = "items_info"
 
-    user_id: Mapped[int] = mapped_column(primary_key=True)
+    item_id: Mapped[int] = mapped_column(primary_key=True)

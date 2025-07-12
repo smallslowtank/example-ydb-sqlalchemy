@@ -1,30 +1,19 @@
-import sqlalchemy as sa
 from sqlalchemy import select
 from database import session_factory
-from models import Users
+from models import Item
 
 
 class ORM:
 
     @staticmethod
-    def list_users():
+    def list_items():
         with session_factory() as session:
-            # SELECT user_id FROM Users
-            query = select(Users.user_id)
-            users = session.execute(query)
-            result = users.scalars().all()
-            return result
-
-
-def run_example_core(engine):
-    with engine.connect() as conn:
-        # raw sql
-        rs = conn.execute(
-            sa.text(
-                """
-                SELECT user_id
-                FROM Users
-                """
-            )
-        )
-        return rs.scalars().all()
+            query = select(Item.item_id)
+            try:
+                items = session.execute(query)
+                result = items.scalars().all()
+            except:
+                print("ЕГГОГ")
+                result = None
+            finally:
+                return result
