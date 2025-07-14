@@ -1,5 +1,3 @@
 dotenv
-sqlalchemy
-ydb
-ydb-sqlalchemy
 ydb[yc]
+ydb-sqlalchemy
