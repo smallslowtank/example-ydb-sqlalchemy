@@ -10,6 +10,7 @@ class Settings:
     db_id = os.getenv("DB_ID")  # идентификатор БД
     zone = "ru-central1"
     endpoint = "ydb.serverless.yandexcloud.net:2135"  # эндпоинт для serverless БД
+    # yql+ydb_async асинхронный диалект
     url = f"yql+ydb_async://{endpoint}//{zone}/{cloud_id}/{db_id}"
     # для авторизации в БД используются метаданные сервисного аккаунта
     # от имени которого запускается функция
